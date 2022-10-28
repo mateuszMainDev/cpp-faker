@@ -144,11 +144,9 @@ install: ${LIB}
 	mkdir -p ${PREFIX}/lib
 	mkdir -p ${PREFIX}/include/faker
 	mkdir -p ${PREFIX}/faker
-	mkdir -p ${PREFIX}/faker/docs
 	mkdir -p ${PREFIX}/faker/locales
 	cp ${LIB_DIR}/*.h ${LIB_DIR}/*.hpp ${PREFIX}/include/faker
 	cp ${LIB} ${PREFIX}/lib/libfaker.a
-	cp -R docs/html/ ${PREFIX}/faker/docs
 	cp -R locales/ ${PREFIX}/faker
 
 #======================================================================
